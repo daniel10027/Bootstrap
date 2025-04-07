@@ -1,0 +1,50 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .hero {
+    height: 100vh;
+    background: url('assets/images/hero.png') no-repeat center center/cover;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1, h2, h3 {
+    color: #007f5f; 
+  }
+  
+  .btn-ivory {
+    background-color: #007f5f;
+    border: none;
+    color: white;
+  }
+  .btn-ivory:hover {
+    background-color: #005a41;
+  }
+  
+  #contact h2 {
+    font-weight: bold;
+  }
+  
+  .btn-ivory {
+    background-color: #007f5f;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-ivory:hover {
+    background-color: #005a41;
+  }
+  

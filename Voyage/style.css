@@ -1,0 +1,105 @@
+/* HERO section */
+.hero {
+    height: 100vh;
+    background: url('assets/hero.jpg') center center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: heroSlide 18s infinite ease-in-out;
+  }
+  
+  @keyframes heroSlide {
+    0%   { background-image: url('assets/hero.jpg'); }
+    33%  { background-image: url('assets/gb.jpg'); }
+    66%  { background-image: url('assets/man.jpg'); }
+    100% { background-image: url('assets/yakro.jpeg'); }
+  }
+  
+  .hero .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+  
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+  }
+  
+ 
+  section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+  }
+  
+  section.reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+  .card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+
+  .btn-success {
+    background-color: #007f5f;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #005c44;
+  }
+  
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .contact-extra {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    height: 100%;
+  }
+  .contact-extra h5 {
+    color: #007f5f;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  .contact-extra iframe {
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    height: 200px;
+  }
+  
+
+  .reservation-section .form-select,
+  .reservation-section .form-control {
+    margin-bottom: 1rem;
+  }
+  
